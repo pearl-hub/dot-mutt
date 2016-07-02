@@ -1,11 +1,11 @@
 # vim: ft=muttrc
 
 
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/general
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/smtp
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/macros
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/bindings
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/colors
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/auto_views
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/headers
-source ${PEARL_HOME}/packages/pearl/mutt/mutt.d/pgp
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/general
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/smtp
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/macros
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/bindings
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/colors
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/auto_views
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/headers
+source ${PEARL_HOME}/packages/pearl/dot-mutt/mutt.d/pgp
