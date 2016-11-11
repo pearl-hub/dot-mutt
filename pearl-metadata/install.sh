@@ -1,13 +1,17 @@
 
 post_install() {
-    apply "source $PEARL_PKGDIR/muttrc" $HOME/.muttrc
+    link mutt "$PEARL_PKGDIR/muttrc"
     if ask "Do you want to install mutt sidebar config too?" "N"
     then
-        apply "source $PEARL_PKGDIR/muttrc-sidebar" $HOME/.muttrc
+        link mutt "$PEARL_PKGDIR/muttrc-sidebar"
     fi
 }
 
+post_update() {
+    post_install
+}
+
 pre_remove() {
-    unapply "source $PEARL_PKGDIR/muttrc" $HOME/.muttrc
-    unapply "source $PEARL_PKGDIR/muttrc-sidebar" $HOME/.muttrc
+    unlink mutt "$PEARL_PKGDIR/muttrc"
+    unlink mutt "$PEARL_PKGDIR/muttrc-sidebar"
 }
